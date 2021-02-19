@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 33px 30px ;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab-container, .form-container {
+    width: 1170px;
+}
+
+.tab-content__radius {
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    padding-top: 60px;
+    background-color: #fff;
+    margin-bottom: 110px;
+}
+
+.tab-head {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 40px 0 rgb(0 0 0 / 40%);
+}
+
+.tab-head th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+th {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #6c7ae0;
+    text-align: left;
+}
+
+td {
+    font-family: Lato;
+    font-size: 15px;
+    color: rgb(104, 103, 103);
+    line-height: 1.4;
+}
+
+.tab-head th:nth-child(1), 
+.tab-body tr td:nth-child(1) {
+    width: 10%;
+    padding-left: 40px;
+}
+
+.tab-head th:nth-child(2),
+.tab-body tr td:nth-child(2) {
+    width: 20%;
+}
+
+.tab-head th:nth-child(3),
+.tab-body tr td:nth-child(3) {
+    width: 20%;
+}
+
+.tab-head th:nth-child(4),
+.tab-body tr td:nth-child(4) {
+    width: 20%;
+}
+
+.tab-head th:nth-child(5),
+.tab-body tr td:nth-child(5) {
+    width: 15%;
+}
+
+.tab-head th:nth-child(6),
+.tab-body tr td:nth-child(6) {
+    width: 15%;
+}
+
+.tab-body {   
+    max-height: 585px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.tab-body td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.tab-body tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+
+/* btn */
+.form-btn {
+  border: none;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.form-btn__primary {
+    background-color: #6c7ae0;
+}
+
+.form-btn__danger {
+    background-color: red;
+}
+
+.form-btn__success{
+    background-color: green;
+}
+
+.form-container form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select {
+    height: 40px;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: none;
+    border: solid 2px #6c7ae0;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%);
+}
+
+input:focus, select:focus {
+    border: none;
+}
+
+input:first-child {
+    margin-left: 0;
+}
+
+/* Custom Scroll Bar */
+
+/* width */
+.tab-body::-webkit-scrollbar {
+  width: 10px;
+  opacity: .3;
+}
+
+/* Handle */
+.tab-body::-webkit-scrollbar-thumb {
+  background: #1fa423;
+}
+
+/* Handle on hover */
+.tab-body::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
